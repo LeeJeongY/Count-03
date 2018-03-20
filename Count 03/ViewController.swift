@@ -28,9 +28,17 @@ class ViewController: UIViewController {
         Count.text = "\(count)"
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func changeColor(_ sender: Any) {
+        count = count + 1
+        if count % 2 == 0 {
+            view.backgroundColor = UIColor.yellow
+        }
+        else {
+            view.backgroundColor = UIColor.green
+    }
+    
+    
     }
 
 
